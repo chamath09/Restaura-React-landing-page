@@ -119,19 +119,19 @@ export const REVIEW = {
 };
 
 export const CONTACT = [
-  { key: "address", value: "Address: 123 Main Street, Paris, France, 345678" },
-  { key: "phone", value: "Phone: 123-456-7890" },
+  { key: "address", value: "Address: Homagama, Colombo , Sri Lanka" },
+  { key: "phone", value: "Phone: +94 71 48 22 623" },
   { key: "email", value: "Email: contact@restaurant.com" },
 ];
 
 export const SOCIAL_MEDIA_LINKS = [
   {
-    href: "https://x.com/",
+    href: "https://facebook.com/",
     icon: <FaFacebook fontSize={30} className="hover:opacity-80" />,
   },
 
   {
-    href: "https://x.com/",
+    href: "https://instagrame.com/",
     icon: <FaInstagram fontSize={30} className="hover:opacity-80" />,
   },
   {
