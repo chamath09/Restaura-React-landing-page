@@ -1,5 +1,5 @@
 # Step 1: Build React App
-FROM node:alpine3.18 AS build
+FROM node:22 AS build
 WORKDIR /app
 COPY package.json . 
 RUN npm install
