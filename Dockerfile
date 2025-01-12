@@ -4,8 +4,7 @@ WORKDIR /app
 COPY package.json package-lock.json . 
 RUN npm ci
 COPY . .
-RUN npm run build || { echo "Build failed"; exit 1; }
-RUN ls -la /app/build  # Verify the build directory
+RUN npm run build 
 
 # Step 2: Serve with Nginx Server
 FROM nginx:1.23-alpine
