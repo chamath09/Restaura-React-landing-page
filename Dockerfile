@@ -1,11 +1,11 @@
 # Step 1: Build React App
 FROM node:22 AS build
 WORKDIR /app
-COPY package.json .
-RUN npm install
+COPY package.json package-lock.json . 
+RUN npm ci
 COPY . .
-RUN npm run build
-RUN ls -la /app/build  # Debug: List build directory contents
+RUN npm run build || { echo "Build failed"; exit 1; }
+RUN ls -la /app/build  # Verify the build directory
 
 # Step 2: Serve with Nginx Server
 FROM nginx:1.23-alpine
