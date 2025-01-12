@@ -6,7 +6,7 @@ RUN npm i
 COPY . .
 RUN npm run build 
 
-# Step 2: Serve with Nginx Server
+# Step 2: Serve with Nginx 
 FROM nginx:1.27.3
 WORKDIR /usr/share/nginx/html
 RUN rm -rf *
