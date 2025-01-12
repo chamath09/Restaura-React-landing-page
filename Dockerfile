@@ -13,3 +13,5 @@ RUN rm -rf *
 COPY --from=build /app/dist .
 EXPOSE 80
 ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
+
+#update
