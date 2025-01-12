@@ -66,7 +66,7 @@ const Review = () => {
         whileInView="show"
         variants={itemVariants}
         viewport={{ once: true }}
-        className="mt-14 flex flex-col items-center justify-center gap-2 md:flex-row"
+        className="mt-14 flex flex-col items-end justify-end gap-2 md:flex-row"
       >
         {[customer1, customer2, customer3, customer4].map((customer, index) => (
           <img
